@@ -227,7 +227,7 @@ class _MainScreamState extends State<MainScream> {
                     ),
                     const SizedBox(height: 3),
                     const Text(
-                      "Macapá",
+                      "Fortaleza",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
