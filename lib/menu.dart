@@ -1,16 +1,15 @@
-
 import 'package:cultura_connect/models/city.dart';
 import 'package:cultura_connect/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
-class TelaPricipal extends StatefulWidget {
-  const TelaPricipal({super.key});
+class MainScream extends StatefulWidget {
+  const MainScream({super.key});
 
   @override
-  State<TelaPricipal> createState() => _TelaPricipalState();
+  State<MainScream> createState() => _MainScreamState();
 }
 
-class _TelaPricipalState extends State<TelaPricipal> {
+class _MainScreamState extends State<MainScream> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -159,13 +158,56 @@ class _TelaPricipalState extends State<TelaPricipal> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                       GestureDetector(
+                        GestureDetector(
                           onTap: () {
                             final City city = City(
                               name: "Macapá",
                               description:
                                   "Macapá se originou de um destacamento militar fixado no mesmo local das ruínas da antiga Fortaleza de Santo Antônio, a partir de 1740. Este destacamento surgiu em razão de constantes pedidos feitos pelo governo da Província do Grão Pará e Maranhão (a quem as terras do Amapá estavam juridicamente anexadas), João de Abreu Castelo Branco, que desde 1738, sentindo o estado de abandono em que se encontrava a Fortaleza, solicitava à Coroa portuguesa providências urgentes.",
                               cover: "images/macapa.png",
+                              tourism: "images/museusacapa.jpg",
+                            );
+                            Navigator.pushNamed(
+                              context,
+                              AppRoutes.city,
+                              arguments: city,
+                            );
+                          },
+                          child: Image.asset(
+                            "images/macapa.png",
+                            height: 150,
+                            width: 350,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Macapá",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Fortaleza
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: () {
+                            final City city = City(
+                              name: "Fortaleza",
+                              description:
+                                  "Fortaleza, a deslumbrante capital do Ceará, encanta com suas praias de águas mornas e sol radiante ao longo do ano. Com uma atmosfera vibrante, a cidade mescla modernidade e tradição em sua arquitetura colonial e bairros pitorescos. Além das belas paisagens litorâneas, Fortaleza oferece uma rica cena gastronômica, cultura efervescente e hospitalidade calorosa, tornando-a um destino imperdível para quem busca uma experiência inesquecível no Nordeste brasileiro.",
                               tourism: "images/museusacapa.jpg",
                             );
                             Navigator.pushNamed(

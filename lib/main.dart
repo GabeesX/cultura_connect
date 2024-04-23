@@ -7,7 +7,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     routes: {
-      AppRoutes.home: (ctx) => const TelaPricipal(),
+      AppRoutes.home: (ctx) => const MainScream(),
       AppRoutes.city: (ctx) => const CityScreen(),
     },
   ));
