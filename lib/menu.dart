@@ -208,6 +208,7 @@ class _MainScreamState extends State<MainScream> {
                               name: "Fortaleza",
                               description:
                                   "Fortaleza, a deslumbrante capital do Ceará, encanta com suas praias de águas mornas e sol radiante ao longo do ano. Com uma atmosfera vibrante, a cidade mescla modernidade e tradição em sua arquitetura colonial e bairros pitorescos. Além das belas paisagens litorâneas, Fortaleza oferece uma rica cena gastronômica, cultura efervescente e hospitalidade calorosa, tornando-a um destino imperdível para quem busca uma experiência inesquecível no Nordeste brasileiro.",
+                              cover: "images/macapa.png",
                               tourism: "images/museusacapa.jpg",
                             );
                             Navigator.pushNamed(
