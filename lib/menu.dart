@@ -70,7 +70,8 @@ class _MainScreamState extends State<MainScream> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        GestureDetector(
+                        Flexible (
+                        child: GestureDetector(
                           onTap: () {
                             final City city = City(
                               name: "Manaus",
@@ -90,6 +91,7 @@ class _MainScreamState extends State<MainScream> {
                             height: 150,
                             width: 350,
                           ),
+                        ),
                         ),
                       ],
                     ),
@@ -114,7 +116,8 @@ class _MainScreamState extends State<MainScream> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        GestureDetector(
+                        Flexible(
+                          child: GestureDetector(
                           onTap: () {
                             final City city = City(
                               name: "Palmas",
@@ -134,6 +137,7 @@ class _MainScreamState extends State<MainScream> {
                             height: 150,
                             width: 350,
                           ),
+                        ),
                         ),
                       ],
                     ),
@@ -158,7 +162,8 @@ class _MainScreamState extends State<MainScream> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        GestureDetector(
+                        Flexible( 
+                          child: GestureDetector(
                           onTap: () {
                             final City city = City(
                               name: "Macapá",
@@ -178,6 +183,7 @@ class _MainScreamState extends State<MainScream> {
                             height: 150,
                             width: 350,
                           ),
+                        ),
                         ),
                       ],
                     ),
@@ -202,7 +208,8 @@ class _MainScreamState extends State<MainScream> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        GestureDetector(
+                        Flexible( 
+                          child: GestureDetector(
                           onTap: () {
                             final City city = City(
                               name: "Fortaleza",
@@ -222,6 +229,7 @@ class _MainScreamState extends State<MainScream> {
                             height: 150,
                             width: 350,
                           ),
+                        ),
                         ),
                       ],
                     ),
