@@ -27,7 +27,7 @@ class _MainScreamState extends State<MainScream> {
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('images/fundo.png'),
+              image: AssetImage('images/fundo/fundo.png'),
               fit: BoxFit.cover,
             ),
           ),
@@ -62,7 +62,7 @@ class _MainScreamState extends State<MainScream> {
                     fontWeight: FontWeight.bold),
               ),
 
-              // imagen do manaus
+              // imagem manaus
               Padding(
                 padding: const EdgeInsets.only(top: 32),
                 child: Column(
@@ -70,28 +70,28 @@ class _MainScreamState extends State<MainScream> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Flexible (
-                        child: GestureDetector(
-                          onTap: () {
-                            final City city = City(
-                              name: "Manaus",
-                              description:
-                                  "Manaus foi criada no século XVII para demonstrar a presença lusitana e fixar domínio português na região amazônica, que na época já era considerada posição estratégica em território brasileiro. O núcleo urbano, localizado à margem esquerda do Rio Negro, teve início com a construção do Forte da Barra de São José, idealizado pelo capitão de artilharia, Francisco da Mota Falcão, em 1669, data que foi convencionada a usar como o nascimento da cidade",
-                              cover: "images/manaus.png",
-                              tourism: "images/teatroamazonas.jpg",
-                            );
-                            Navigator.pushNamed(
-                              context,
-                              AppRoutes.city,
-                              arguments: city,
-                            );
-                          },
-                          child: Image.asset(
-                            "images/manaus.png",
-                            height: 150,
-                            width: 350,
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Manaus",
+                                description:
+                                    "Manaus foi criada no século XVII para demonstrar a presença lusitana e fixar domínio português na região amazônica, que na época já era considerada posição estratégica em território brasileiro. O núcleo urbano, localizado à margem esquerda do Rio Negro, teve início com a construção do Forte da Barra de São José, idealizado pelo capitão de artilharia, Francisco da Mota Falcão, em 1669, data que foi convencionada a usar como o nascimento da cidade",
+                                cover: "images/capitais/manaus.png",
+                                tourism: "images/pontos/teatroamazonas.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/manaus.png",
+                              height: 150,
+                              width: 350,
+                            ),
                           ),
-                        ),
                         ),
                       ],
                     ),
@@ -108,7 +108,7 @@ class _MainScreamState extends State<MainScream> {
                 ),
               ),
 
-              // imagen do palmas
+              // imagem palmas
               Padding(
                 padding: const EdgeInsets.only(top: 32),
                 child: Column(
@@ -118,26 +118,26 @@ class _MainScreamState extends State<MainScream> {
                       children: <Widget>[
                         Flexible(
                           child: GestureDetector(
-                          onTap: () {
-                            final City city = City(
-                              name: "Palmas",
-                              description:
-                                  "Palmas foi fundada em 20 de maio de 1989, apenas sete meses após a criação do estado do Tocantins, depois da transferência da capital provisória Miracema. O objetivo do então governador Siqueira Campos era criar uma cidade que pudesse se tornar um polo de irradiação de desenvolvimento econômico e social do estado. ",
-                              cover: "images/palmas.png",
-                              tourism: "images/parquecesamar.jpg",
-                            );
-                            Navigator.pushNamed(
-                              context,
-                              AppRoutes.city,
-                              arguments: city,
-                            );
-                          },
-                          child: Image.asset(
-                            "images/palmas.png",
-                            height: 150,
-                            width: 350,
+                            onTap: () {
+                              final City city = City(
+                                name: "Palmas",
+                                description:
+                                    "Palmas foi fundada em 20 de maio de 1989, apenas sete meses após a criação do estado do Tocantins, depois da transferência da capital provisória Miracema. O objetivo do então governador Siqueira Campos era criar uma cidade que pudesse se tornar um polo de irradiação de desenvolvimento econômico e social do estado. ",
+                                cover: "images/capitais/palmas.png",
+                                tourism: "images/pontos/parquecesamar.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/palmas.png",
+                              height: 150,
+                              width: 350,
+                            ),
                           ),
-                        ),
                         ),
                       ],
                     ),
@@ -154,7 +154,7 @@ class _MainScreamState extends State<MainScream> {
                 ),
               ),
 
-              // imagen do macapa
+              // imagem macapa
               Padding(
                 padding: const EdgeInsets.only(top: 32),
                 child: Column(
@@ -162,28 +162,28 @@ class _MainScreamState extends State<MainScream> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Flexible( 
+                        Flexible(
                           child: GestureDetector(
-                          onTap: () {
-                            final City city = City(
-                              name: "Macapá",
-                              description:
-                                  "Macapá se originou de um destacamento militar fixado no mesmo local das ruínas da antiga Fortaleza de Santo Antônio, a partir de 1740. Este destacamento surgiu em razão de constantes pedidos feitos pelo governo da Província do Grão Pará e Maranhão (a quem as terras do Amapá estavam juridicamente anexadas), João de Abreu Castelo Branco, que desde 1738, sentindo o estado de abandono em que se encontrava a Fortaleza, solicitava à Coroa portuguesa providências urgentes.",
-                              cover: "images/macapa.png",
-                              tourism: "images/museusacapa.jpg",
-                            );
-                            Navigator.pushNamed(
-                              context,
-                              AppRoutes.city,
-                              arguments: city,
-                            );
-                          },
-                          child: Image.asset(
-                            "images/macapa.png",
-                            height: 150,
-                            width: 350,
+                            onTap: () {
+                              final City city = City(
+                                name: "Macapá",
+                                description:
+                                    "Macapá se originou de um destacamento militar fixado no mesmo local das ruínas da antiga Fortaleza de Santo Antônio, a partir de 1740. Este destacamento surgiu em razão de constantes pedidos feitos pelo governo da Província do Grão Pará e Maranhão (a quem as terras do Amapá estavam juridicamente anexadas), João de Abreu Castelo Branco, que desde 1738, sentindo o estado de abandono em que se encontrava a Fortaleza, solicitava à Coroa portuguesa providências urgentes.",
+                                cover: "images/capitais/macapa.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/macapa.png",
+                              height: 150,
+                              width: 350,
+                            ),
                           ),
-                        ),
                         ),
                       ],
                     ),
@@ -208,34 +208,678 @@ class _MainScreamState extends State<MainScream> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Flexible( 
+                        Flexible(
                           child: GestureDetector(
-                          onTap: () {
-                            final City city = City(
-                              name: "Fortaleza",
-                              description:
-                                  "Fortaleza, a deslumbrante capital do Ceará, encanta com suas praias de águas mornas e sol radiante ao longo do ano. Com uma atmosfera vibrante, a cidade mescla modernidade e tradição em sua arquitetura colonial e bairros pitorescos. Além das belas paisagens litorâneas, Fortaleza oferece uma rica cena gastronômica, cultura efervescente e hospitalidade calorosa, tornando-a um destino imperdível para quem busca uma experiência inesquecível no Nordeste brasileiro.",
-                              cover: "images/macapa.png",
-                              tourism: "images/museusacapa.jpg",
-                            );
-                            Navigator.pushNamed(
-                              context,
-                              AppRoutes.city,
-                              arguments: city,
-                            );
-                          },
-                          child: Image.asset(
-                            "images/macapa.png",
-                            height: 150,
-                            width: 350,
+                            onTap: () {
+                              final City city = City(
+                                name: "Fortaleza",
+                                description:
+                                    "Fortaleza, a deslumbrante capital do Ceará, encanta com suas praias de águas mornas e sol radiante ao longo do ano. Com uma atmosfera vibrante, a cidade mescla modernidade e tradição em sua arquitetura colonial e bairros pitorescos. Além das belas paisagens litorâneas, Fortaleza oferece uma rica cena gastronômica, cultura efervescente e hospitalidade calorosa, tornando-a um destino imperdível para quem busca uma experiência inesquecível no Nordeste brasileiro.",
+                                cover: "images/capitais/fortaleza.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/fortaleza.png",
+                              height: 150,
+                              width: 350,
+                            ),
                           ),
-                        ),
                         ),
                       ],
                     ),
                     const SizedBox(height: 3),
                     const Text(
                       "Fortaleza",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem belem
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Belém",
+                                description:
+                                    "Belém é a capital do estado do Pará, no litoral norte do Brasil. Trata-se de uma das cidades mais importantes dessa região, estando situada em uma posição estratégica do território. Está inserida no bioma amazônico, possui clima tropical úmido e um relevo predominantemente plano. A cidade dispõe de uma rica tradição cultural e diversos atrativos turísticos que tornam essa atividade de elevada importância",
+                                cover: "images/capitais/belem.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/belem.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Belém",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem porto velho
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Porto Velho",
+                                description:
+                                    "Porto Velho, capital de Rondônia, é uma cidade vibrante que combina a história rica da Amazônia com a modernidade de um centro urbano em constante desenvolvimento. Localizada às margens do rio Madeira, um dos maiores afluentes do Amazonas, Porto Velho é um portal para a vastidão da floresta tropical e oferece aos visitantes uma experiência única e inesquecível.",
+                                cover: "images/capitais/porto_velho.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/porto_velho.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Porto Velho",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Rio Branco
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Rio Branco",
+                                description:
+                                    "Rio Branco, a capital do Acre, encanta visitantes com sua rica história e beleza natural. Situada às margens do Rio Acre, a cidade oferece uma variedade de atrações turísticas, desde o Memorial dos Autonomistas até o Parque da Maternidade, onde é possível apreciar a fauna e flora locais. Com sua culinária única e festivais culturais vibrantes, Rio Branco promete uma experiência memorável para os viajantes que buscam explorar a Amazônia brasileira.",
+                                cover: "images/capitais/rio_branco.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/rio_branco.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Rio Branco",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Boa Vista
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Boa Vista",
+                                description:
+                                    "Boa Vista, a bela capital de Roraima, é um destino fascinante para os amantes do turismo. Com sua arquitetura única e influências culturais variadas, a cidade cativa os visitantes com pontos de interesse como o Parque Anauá e o Complexo Turístico Praia Grande. Além disso, Boa Vista oferece uma oportunidade única de explorar a cultura indígena através do Memorial aos Povos Indígenas. Com sua atmosfera acolhedora e paisagens deslumbrantes, Boa Vista é um convite para uma viagem inesquecível na região norte do Brasil.",
+                                cover: "images/capitais/boa_vista.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/boa_vista.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Boa Vista",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Maceio
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Maceió",
+                                description:
+                                    "Maceió, capital de Alagoas, é um destino turístico incrível. Suas praias deslumbrantes, como Ponta Verde e Praia do Francês, atraem visitantes em busca de relaxamento. Com uma rica gastronomia à base de frutos do mar e uma atmosfera acolhedora, Maceió promete uma experiência inesquecível no nordeste brasileiro.",
+                                cover: "images/capitais/maceio.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/maceio.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Maceió",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Salvador
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Salvador",
+                                description:
+                                    "Salvador, capital da Bahia, é um destino turístico imperdível. Com sua história rica e praias deslumbrantes, como Porto da Barra e Itapuã, atrai visitantes de todo o mundo. A culinária baiana, com seus sabores únicos, completa a experiência cultural. Salvador é uma celebração da diversidade e da beleza do Brasil.",
+                                cover: "images/capitais/salvador.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/salvador.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Salvador",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem São Luís
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "São Luís",
+                                description:
+                                    "São Luís, capital do Maranhão, é um destino turístico encantador. Com sua arquitetura colonial, festas populares e delícias da culinária nordestina, a cidade oferece uma experiência cultural única. Suas praias próximas completam o cenário, tornando São Luís um convite irresistível para explorar o Nordeste brasileiro.",
+                                cover: "images/capitais/sao_luis.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/sao_luis.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "São Luís",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem João Pessoa
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "João Pessoa",
+                                description:
+                                    "João Pessoa, capital da Paraíba, é um destino turístico encantador. Suas praias deslumbrantes e rica herança cultural atraem visitantes em busca de relaxamento e experiências únicas. Com uma gastronomia deliciosa e uma atmosfera acolhedora, a cidade oferece uma viagem inesquecível pelo Nordeste brasileiro.",
+                                cover: "images/capitais/joao_pessoa.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/joao_pessoa.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "João Pessoa",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Recife
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Recife",
+                                description:
+                                    "Recife, capital de Pernambuco, é um destino turístico vibrante conhecido por suas praias deslumbrantes, cena cultural rica e gastronomia diversificada. Com sua história fascinante e atmosfera acolhedora, é um convite para explorar o Nordeste brasileiro.",
+                                cover: "images/capitais/recife.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/recife.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Recife",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Teresina
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Teresina",
+                                description:
+                                    "Teresina, capital do Piauí, é uma cidade tranquila com uma rica herança cultural e gastronomia saborosa. Embora não tenha praias, oferece parques e pontos turísticos encantadores, como a Ponte Estaiada. Teresina é uma opção interessante para explorar o interior do Brasil.",
+                                cover: "images/capitais/teresina.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/teresina.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Teresina",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Teresina
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Natal",
+                                description:
+                                    "Natal, capital do Rio Grande do Norte, é famosa por suas praias paradisíacas, cultura vibrante e gastronomia regional. Com um clima acolhedor e muitas opções de lazer, Natal oferece uma experiência turística memorável no Nordeste brasileiro.",
+                                cover: "images/capitais/natal.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/natal.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Natal",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Aracaju
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Aracaju",
+                                description:
+                                    "Aracaju, a capital sergipana, é um convite ao encanto do Nordeste brasileiro. Suas praias, como a bela Praia de Atalaia, oferecem tranquilidade e beleza natural aos visitantes. Além disso, a cidade respira cultura, com museus, feiras de artesanato e eventos culturais que revelam a riqueza histórica e artística da região. Com uma gastronomia diversificada, que vai desde os sabores típicos nordestinos até opções internacionais, Aracaju é uma verdadeira celebração de cores, sabores e tradições que conquista quem a visita.",
+                                cover: "images/capitais/aracaju.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/aracaju.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Aracaju",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Aracaju
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Brasília",
+                                description:
+                                    "Brasília, a capital do Brasil, encanta com sua arquitetura moderna e monumentos icônicos. Além da beleza urbana, oferece espaços culturais e uma gastronomia diversificada. Uma visita a Brasília é uma experiência única que combina história e modernidade.",
+                                cover: "images/capitais/brasilia.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/brasilia.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Brasília",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Aracaju
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Goiânia",
+                                description:
+                                    "Goiânia, capital de Goiás, é um destino turístico em ascensão no centro-oeste brasileiro. Conhecida por sua qualidade de vida, parques e vida cultural vibrante, é uma cidade acolhedora e diversificada, oferecendo uma experiência única aos visitantes.",
+                                cover: "images/capitais/goiania.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/goiania.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Goiânia",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,

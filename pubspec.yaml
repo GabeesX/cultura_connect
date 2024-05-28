@@ -63,13 +63,28 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
-    - images/manaus.png
-    - images/macapa.png
-    - images/palmas.png
-    - images/fundo.png
-    - images/museusacapa.jpg
-    - images/parquecesamar.jpg
-    - images/teatroamazonas.jpg
+    - images/capitais/manaus.png
+    - images/capitais/macapa.png
+    - images/capitais/palmas.png
+    - images/fundo/fundo.png
+    - images/pontos/museusacapa.jpg
+    - images/pontos/parquecesamar.jpg
+    - images/pontos/teatroamazonas.jpg
+    - images/capitais/fortaleza.png
+    - images/capitais/belem.png
+    - images/capitais/porto_velho.png
+    - images/capitais/rio_branco.png
+    - images/capitais/boa_vista.png
+    - images/capitais/maceio.png
+    - images/capitais/salvador.png
+    - images/capitais/sao_luis.png
+    - images/capitais/joao_pessoa.png
+    - images/capitais/recife.png
+    - images/capitais/teresina.png
+    - images/capitais/natal.png
+    - images/capitais/aracaju.png
+    - images/capitais/brasilia.png
+    - images/capitais/goiania.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
