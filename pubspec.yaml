@@ -85,6 +85,15 @@ flutter:
     - images/capitais/aracaju.png
     - images/capitais/brasilia.png
     - images/capitais/goiania.png
+    - images/capitais/cuiaba.png
+    - images/capitais/campo_grande.png
+    - images/capitais/belo_horizonte.png
+    - images/capitais/sao_paulo.png
+    - images/capitais/rio_de_janeiro.png
+    - images/capitais/vitoria.png
+    - images/capitais/curitiba.png
+    - images/capitais/porto_alegre.png
+    - images/capitais/florianopolis.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

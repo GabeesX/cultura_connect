@@ -844,7 +844,7 @@ class _MainScreamState extends State<MainScream> {
                 ),
               ),
 
-              // Imagem Aracaju
+              // Imagem goiania
               Padding(
                 padding: const EdgeInsets.only(top: 32),
                 child: Column(
@@ -880,6 +880,420 @@ class _MainScreamState extends State<MainScream> {
                     const SizedBox(height: 3),
                     const Text(
                       "Goiânia",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Cuiabá
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Cuiabá",
+                                description:
+                                    "Cuiabá, capital de Mato Grosso, é conhecida como a porta de entrada para o Pantanal. Com seu centro histórico preservado e uma culinária típica deliciosa, atrai turistas em busca de cultura e sabores regionais. Além disso, oferece oportunidades de ecoturismo, com trilhas e passeios pela natureza exuberante da região, incluindo o famoso Pantanal, lar de uma rica diversidade de vida selvagem.",
+                                cover: "images/capitais/cuiaba.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/cuiaba.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Cuiabá",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem campo grande
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Campo Grande",
+                                description:
+                                    "Campo Grande, capital de Mato Grosso do Sul, é uma cidade que combina modernidade e tradição. Destaque para o Parque das Nações Indígenas e o Mercadão Municipal. É ponto de partida para explorar o Pantanal e Bonito, conhecidos por sua natureza exuberante e atividades de ecoturismo.",
+                                cover: "images/capitais/campo_grande.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/campo_grande.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Campo Grande",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Belo Horizonte
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Belo Horizonte",
+                                description:
+                                    "Belo Horizonte, capital de Minas Gerais, encanta com sua arquitetura e culinária. Destaques incluem a Praça da Liberdade e o Mercado Central. Para quem ama natureza, o Parque das Mangabeiras oferece belas paisagens. A cidade é também ponto de partida para explorar destinos turísticos próximos, como Ouro Preto e Inhotim.",
+                                cover: "images/capitais/belo_horizonte.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/belo_horizonte.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Belo Horizonte",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem São Paulo
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "São Paulo",
+                                description:
+                                    "São Paulo, a maior cidade do Brasil, oferece uma variedade incrível de experiências culturais, gastronômicas e de lazer. Destaques incluem a Avenida Paulista, o Mercado Municipal e o Parque Ibirapuera. Com sua intensa vida noturna e diversidade, São Paulo é um destino vibrante para todos os gostos.",
+                                cover: "images/capitais/sao_paulo.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/sao_paulo.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "São Paulo",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Rio de Janeiro
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Rio de Janeiro",
+                                description:
+                                    "O Rio de Janeiro encanta com suas praias famosas, como Copacabana e Ipanema, e o Cristo Redentor. Além das belezas naturais, oferece uma rica vida cultural, com música e dança. É um destino imperdível para sol, mar, cultura e diversão.",
+                                cover: "images/capitais/rio_de_janeiro.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/rio_de_janeiro.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Rio de Janeiro",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Vitória
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Vitória",
+                                description:
+                                    "Vitória, capital do Espírito Santo, é uma cidade charmosa com praias deslumbrantes, como Camburi e Ilha do Boi. Destaque também para o Convento da Penha, oferecendo vistas panorâmicas incríveis. Com sua história e beleza natural, Vitória é um destino encantador para quem busca tranquilidade à beira-mar.",
+                                cover: "images/capitais/vitoria.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/vitoria.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Vitória",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Curitiba
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Curitiba",
+                                description:
+                                    "Curitiba, capital do Paraná, é famosa por sua organização e qualidade de vida. Destaca-se pelos seus belos parques, como o Jardim Botânico, e sua arquitetura marcante, como a Ópera de Arame. Com uma cena cultural e gastronômica vibrante, Curitiba cativa os visitantes com sua atmosfera acolhedora e suas opções de lazer.",
+                                cover: "images/capitais/curitiba.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/curitiba.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Curitiba",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Porto Alegre
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Porto Alegre",
+                                description:
+                                    "Porto Alegre, capital do Rio Grande do Sul, encanta com sua história, cultura e beleza natural. Destaques incluem o Parque da Redenção e o Mercado Público. Com sua atmosfera acolhedora, é um destino encantador para quem busca experiências autênticas.",
+                                cover: "images/capitais/porto_alegre.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/porto_alegre.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Porto Alegre",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
+
+              // Imagem Florianópolis
+              Padding(
+                padding: const EdgeInsets.only(top: 32),
+                child: Column(
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Flexible(
+                          child: GestureDetector(
+                            onTap: () {
+                              final City city = City(
+                                name: "Florianópolis",
+                                description:
+                                    "Florianópolis, conhecida como a Ilha da Magia encanta com suas praias paradisíacas, como Joaquina e Jurerê. Além das belezas naturais, oferece uma rica cultura açoriana e atrações como a Lagoa da Conceição. É o destino perfeito para quem busca sol, mar e relaxamento.",
+                                cover: "images/capitais/florianopolis.png",
+                                tourism: "images/pontos/museusacapa.jpg",
+                              );
+                              Navigator.pushNamed(
+                                context,
+                                AppRoutes.city,
+                                arguments: city,
+                              );
+                            },
+                            child: Image.asset(
+                              "images/capitais/florianopolis.png",
+                              height: 150,
+                              width: 350,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 3),
+                    const Text(
+                      "Florianópolis",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
