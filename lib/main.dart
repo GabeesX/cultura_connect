@@ -7,7 +7,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     routes: {
-      AppRoutes.home: (ctx) => const MainScream(),
+      AppRoutes.home: (ctx) => const MainScreen(),
       AppRoutes.city: (ctx) => const CityScreen(),
     },
   ));

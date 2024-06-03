@@ -2,14 +2,14 @@ import 'package:cultura_connect/models/city.dart';
 import 'package:cultura_connect/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
-class MainScream extends StatefulWidget {
-  const MainScream({super.key});
+class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
 
   @override
-  State<MainScream> createState() => _MainScreamState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _MainScreamState extends State<MainScream> {
+class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
